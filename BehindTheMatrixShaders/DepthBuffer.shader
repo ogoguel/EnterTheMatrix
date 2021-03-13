@@ -63,10 +63,8 @@ Shader "DepthBuffer"
                 float depthValue = ConvertDistanceToDepth(depthRawValue);
     #endif // UNITY_EDITOR
 
-                float3 worldPos = GetWorldPosFromUV(screenUV,depthValue);
-
-                 float dc = depthValue*100;
-                 return real4(0,dc,0,1);
+                float dc = depthValue*100;
+                return real4(0,dc,0,1);
 
          }
          ENDHLSL
