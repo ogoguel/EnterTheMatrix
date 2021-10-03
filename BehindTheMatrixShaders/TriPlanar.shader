@@ -107,11 +107,7 @@ Shader "TriPlanar"
                 float3 blendWeight  = pow(normalize(abs(i.normal)), sharpness);
                 blendWeight /= (blendWeight.x+ blendWeight.y+ blendWeight.z);
 
-                col.xyz      = colFront * blendWeight.z* _ColorMask.z + 
-                colSide  * blendWeight.x * _ColorMask.x + 
-                colTop   * blendWeight.y * _ColorMask.y;
-
-             
+                col.xyz      = colFront*blendWeight.z + colSide*blendWeight.x + colTop*blendWeight.y ;
                 return col ;
             }
             ENDHLSL

@@ -57,17 +57,13 @@ Shader "WorldSpaceshader"
 
          real4 frag (v2f i) : SV_Target
          {
-
+            float3 wp = i.worldPos;
             if (!(abs(frac(wp.x/_GridSpacing)) < _GridThickness || abs(frac(wp.y/_GridSpacing)) < _GridThickness || abs(frac(wp.z/_GridSpacing)) < _GridThickness) )
             {
                 discard;
             }
-            else
-            {
-                return _GridColour;
-            }
+            return _GridColour;
             
-          
          }
          ENDHLSL
 }
