@@ -30,7 +30,7 @@ Specific functions to display a portal in the scene
 <td >
 <b>Triplanar Shader</b>
 </td>
-<tr>
+</tr>
 <tr>
 <td>
 Display  the depth buffer
@@ -42,7 +42,7 @@ Display a grid on top of the mesh in the worldspace coordinate
 Display a triplanar texture on top of the mesh, with portal support
 </td>
 </tr>
-
+<tr>
 <td >
 	<img src="DepthBuffer.png?raw=true" width="100%" height="auto" />
 </td>
@@ -51,6 +51,24 @@ Display a triplanar texture on top of the mesh, with portal support
 </td>
 <td>
 	<img src="TriPlanar.png?raw=true" width="100%" height="auto" />
+</td>
+</tr>
+</table>
+
+### Sample Unity Project
+
+Sample Unity project using the Universal Render Pipeline and ARFoundation.
+(Using a light version of the Triplanar shader)
+  
+<table border="0" style="width:33%">
+<tr>
+<td >
+<b>TriPlanar Shader</b>
+</td>
+</tr>
+<tr>
+<td >
+    <img src="TriPlanarSample.png?raw=true" width="100%" height="auto" />
 </td>
 </tr>
 </table>
